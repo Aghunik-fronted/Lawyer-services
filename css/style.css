@@ -1483,20 +1483,19 @@ hr {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0;
     background: #181818;
     max-width: 1920px;
-    width: 100%;
     min-height: 49px;
     margin: 0;
-    padding: 0;
+    padding: 0 300px;
+    box-sizing: border-box;
 }
-.dooter-end-row {
+.footer-end-row {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-self: center;
-    margin: 0 auto;
-    gap: 847px;
+    width: 100%;
+    margin: 0;
 }
 .law__save,
 .law__politic {
@@ -1506,6 +1505,7 @@ color: #fff;
 }
 @media (max-width:1600px) {
     .header {
+        width: 100%;
         min-height: 100%;
         background-size: cover;
         background-position: 50% 50%;
@@ -1547,13 +1547,48 @@ color: #fff;
     }
     .icons {
         padding: 0 12%;
+        box-sizing: border-box;
     }
-    /* .adventages-item {
+    .adventages {
+        padding: 0 2%;
+        box-sizing: border-box;
+    }
+    .box {
+        width: 100%;
+        padding: 5%;
+        box-sizing: border-box;
+    }
+    .wrapper {
+        padding: 0 1%;
+        box-sizing: border-box;
+        margin: 0;
+    }
+    .wrapper-box {
+        margin: 0;
+        padding: 0 2%;
+        box-sizing: border-box;
+    }
+    .section {
+        padding: 5%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-    } */
-    .box {
-        padding: 0 10%;
+    }
+    .footer {
+        margin: 0;
+        padding: 2% 4%;
+    }
+    .footer-end {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 24px;
+        margin: 0;
+        padding: 0 4%;
+        white-space: nowrap;
+    }
+    .law__save,
+    .law__politic {
+        margin: 0;
+        padding: 0;
     }
 } 
 
