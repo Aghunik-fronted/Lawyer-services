@@ -1597,20 +1597,22 @@ hr {
 }
 .law__save,
 .law__politic {
-font-size: 14px;
-line-height: 120%;
-color: #fff;
+    font-size: 14px;
+    line-height: 120%;
+    color: #fff;
 }
 @media (max-width: 1600px) {
     .header {
-        width: 100%;
-        min-height: 100%;
-        /* background-repeat: no-repeat;
+        max-width: 100%;
+        min-height: 854px;
+        background-repeat: no-repeat;
         background-size: cover;
-        background-position: 50% 50%; */
+        background-position: 50% 50%;
     }
     .header .container {
-        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 100%;
         min-height: 100%;
         margin: 0;
     }
@@ -1627,10 +1629,10 @@ color: #fff;
         padding: 2% 10%;
         box-sizing: border-box;
     }
-    .services {
+    /* .services {
         padding: 2%;
         gap: 1%;
-    }
+    } */
     .services-item-row {
         font-size: 24px;
     }
@@ -1708,7 +1710,113 @@ color: #fff;
         padding: 0;
     }
 } 
-
+@media (min-width: 1024px) and (max-width: 1320px) {
+    .header {
+        width: 100%;
+        min-height: 581px;
+        height: 100%;
+        background-position: 50% 50%;
+        background-size: cover;
+    }
+    .container {
+        width: 100%;
+        min-height: 100%;
+    }
+    .menu-row  {
+        font-size: 16px;
+    }
+    .main .wrapper {
+        width: 100%;
+        height: 100%;
+        padding: 60px 0 60px 69px;
+        box-sizing: border-box;
+        margin: 0;
+        overflow: auto;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .wrapper .wrapper-item {
+        width: 100%;
+        min-height: 130px;
+        margin: 0 auto;
+        padding: 0 69px;
+    }
+    .wrapper-item-title {
+        font-size: 24px;
+    }
+    .wrapper-item-text {
+        font-size: 16px;
+        text-align: center;
+    }
+    .wrapper-item-box {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        gap: 24px;
+    } 
+    .img-item {
+        min-width: 300px;
+        width: 100%;
+        min-height: 320px;
+        height: 100%;
+    }
+ .section {
+        width: 100%;
+        height: 100%;
+        padding: 60px 70px;
+        margin: 0 ;
+        box-sizing: border-box;
+        overflow-x: auto;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .section-row {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+    }
+    .section .section-container {
+        width: 100%;
+        height: 100%;
+    }
+    .section-item {
+        width: 100%;
+        height: 100%;
+        padding-bottom: 48px;
+        box-sizing: border-box;
+    }
+    .image-container {
+        width: 100%;
+    }
+    .footer {
+        padding: 76px 48px;
+        box-sizing: border-box;
+        margin: 0;
+    }
+    .footer-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 0;
+        padding: 0;
+    }
+    .footer__text {
+        font-size: 16px;
+    }
+    .footer-main {
+        justify-content: space-evenly;
+        align-items: flex-start;
+        padding: 48px 0;
+        box-sizing: border-box;
+    }
+    .contact__col {
+        max-width: 300px;
+    }
+}
 @media (min-width: 768px) and (max-width: 1024px) { 
     .header {
         width: 100%;
@@ -1717,7 +1825,7 @@ color: #fff;
         background-position: 50% 50%;
         background-size: cover;
     }
-     .container {
+    .container {
         width: 100%;
         min-height: 100%;
     }
@@ -1861,17 +1969,14 @@ color: #fff;
     }
     .main .container-row {
         display: flex;
-        flex-wrap: wrap;
-        max-width: 696px;
         width: 100%;
         min-height: 100%;
         padding: 60px 69px;
         box-sizing: border-box;
         justify-content: center;
         align-items: center;
-        margin: 0 auto;
+        margin: 0;
         overflow-x: auto;
-        overflow-y: hidden;
     }
     .services-item {
         max-width: 696px;
@@ -1892,50 +1997,15 @@ color: #fff;
     .adventages {
         max-width: 100%;
         min-height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
         margin: 0;
         padding: 0;
     }
     .adventages-item {
-        max-width: 100%;
-        min-height: 100%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-content: flex-start;
-        align-items: center;
+        align-items: flex-start;
         box-sizing: border-box;
-    }
-    .adventages-item-container,
-    .adventages-row-container  {
-        padding: 30px 32px 40px;
-        max-width: 336px;
-        min-height: 229px;
-        box-sizing: border-box;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        font-size: 14px;
-        transform: translate(0);
-    }
-    .adventages-item-icon {
-        max-width: 272px;
-        width: 100%;
-        background-size: contain;
-
-    }
-    .adventages-item-container:hover.adventages-item-icon {
-        max-width: 100%;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
-    }
-    .adventages-row-container:hover.adventages-item-icon {
-        max-width: 250px;
-        width: 100%;
-        background-size: contain;
     }
     .adventages-item-title {
         white-space: wrap;
@@ -1943,22 +2013,6 @@ color: #fff;
     .adventages-item-desc {
         white-space: wrap;
         font-size: 14px;
-    }
-    .adventages-item-container:hover .adventages-item-title {
-        font-size: 18px;
-        white-space: wrap;
-    }
-    .adventages-item-container:hover .adventages-item-desc {
-        font-size: 14px;
-        white-space: wrap;
-    }
-    .adventages-row-container:hover .adventages-item-title {
-        font-size: 20px;
-        white-space: wrap;
-    }
-    .adventages-row-container:hover .adventages-item-desc {
-        font-size: 14px;
-        white-space: wrap;
     }
     .box-title {
         font-size: 24px;
@@ -1996,11 +2050,7 @@ color: #fff;
         padding: 0;
         height: 100%;
         gap: 24px;
-    }
-    .wrapper-desc-box {
-        /* max-width: 300px; */
-        width: 100%;
-    }
+    } 
     .img-item {
         min-width: 300px;
         width: 100%;
@@ -2057,11 +2107,16 @@ color: #fff;
     .footer {
         min-height: 468px;
         height: 100%;
-        padding: 60px 69px 0 70px;
+        padding: 60px 69px;
         margin: 0;
         box-sizing: border-box;
         display: flex;
         align-items: flex-start;
+    }
+    .footer-main {
+        align-items: self-start;
+        padding: 24px 0 0;
+        box-sizing: border-box;
     }
     .contact--item, 
     .contact--text {
@@ -2094,6 +2149,9 @@ color: #fff;
         width: 100%;
         min-height: 100%;
     }
+    .email-to {
+        display: none;
+    }
     .contacts,
     .company {
         padding: 0 32px;
@@ -2102,32 +2160,86 @@ color: #fff;
         justify-content: space-between;
     }
     .burger-menu {
-        padding-right: 32px;
-        padding-left: 0;
-        box-sizing: border-box;
-        margin: 0;
-        background: none;
+        display: block;
+        position: relative; 
+        max-width: 40px;
+        min-height: 40px;
+        cursor: pointer;
+        background-color: none;
+        padding-right: 25px;
     }
-    .burger-icon img {
-        max-width: 24px;
-        max-height: 24px;
-        background: none;
-    }
-     .menu {
+    .burger-icon {
+        display: block;
+        position: relative;
         width: 100%;
-        padding: 20px;
-        box-sizing: border-box;
-        margin: 0;
-     }
-    .email-to {
-        display: none;
+        height: 100%;
     }
-    .law-title-row {
-        font-size: 36px;
+
+    .burger-icon img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-width: 24px;
+        height: 24px;
+        transition: all 0.3s ease-in-out;
+    }
+    .menu {
+        position: absolute;
+        top: -20px;
+        right: -69px;
+        padding: 16px 24px;
+        margin-left: 30px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: all 0.3s ease-in-out;
+        box-sizing: border-box;
+        max-height: 200px;
+    }
+    .menu-row {
+        max-width: 100%;
+        height: 100%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 16px;
+    }
+    .menu-item {
+        font-size: 16px;
+    }
+    .burger-menu.active .menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        background-color: #222;
+        min-width: 200px;
+        width: 100%;
+        min-height: 529px;
+        height: 100%;
+        /* padding: 0;
+        margin: 0; */
+    }
+    .services {
+        display: flex;
+        align-items: center;
+        padding: 40px 0;
+        margin: 0 auto;
+        box-sizing: border-box;
     }
     .services-item-row {
         font-size: 20px;
         white-space: nowrap;
+    }
+    .law-title-row {
+        font-size: 36px;
+    }
+    .service-row {
+        font-size: 18px;
+        padding: 0;
+        margin: 0;
     }
     .law-title-row {
         font-size: 32px;
@@ -2135,6 +2247,14 @@ color: #fff;
     .text-item {
         font-size: 16px;
     }
+    .services-item {
+        margin: 0 auto;
+    }
+    .adventages-item {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        overflow-x: auto;
+    } 
     .box {
         margin: 0;
         padding: 50px 30px;
@@ -2146,37 +2266,98 @@ color: #fff;
         white-space: wrap;
         margin-bottom: 24px;
     }
-   .wrapper {
+    .box-item {
+        display: none;
+    }
+    .wrapper {
         display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        padding: 0;
+        justify-content: flex-start;
+        align-items: flex-start;    
+        max-width: 100%;
+        height: 100%;
+        overflow-x: auto;
         margin: 0;
-   } 
-   .wrapper .wrapper-item {
+        padding: 40px 24px;
+        box-sizing: border-box;
+    }
+    .wrapper .wrapper-item {
+        max-width: 100%;
+        min-height: 130px;
         display: flex;
         justify-content: center;
         align-items: center;
         margin: 0;
         padding: 0;
-   }
-   .wrapper-item-box {
+    }
+    .wrapper-item-title {
+        font-size: 20px;
+    }
+    .wrapper-item-text {
+        font-size: 14px;
+        text-align: center;
+    }
+    .wrapper-item-box {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        max-width: 100%;
+        height: 100%;
+        gap: 24px;
+        margin: 0;
+        padding: 0;     
+    }
+    .wrapper-desc-box {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        max-width: 300px;
+        max-width: 100%;
+        max-height: 348px;
+        height: 100%;
         margin: 0;
         padding: 0;
-   }
+    }
+    .wrapper-item-desc {
+        min-width: 250px;
+        width: 100%;
+        height: 100%;
+    }
+    .img-item {
+        max-width: 250px;
+        width: 100%;
+        height: 100%;
+        flex-shrink: 0;
+    }
+    .name-item {
+        font-size: 16px;
+    }
+    .text-item-desc {
+        font-size: 14px;
+    }
    .section {
         display: flex;
         justify-content: center;
         align-items: flex-start;
    }
+   .footer {
+    padding: 40px 24px;
+    box-sizing: border-box;
+   }
+   .footer-header {
+    flex-direction: column;
+    padding: 0 24px;
+   }
    .footer-main {
-        display: flex;
+        display: flex; 
         flex-direction: column;
-        justify-content: space-between;
-        gap: 40px;
-        padding: 24px 24px 40px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 24px 0 40px;
+   }
+    .footer__nav {
+        display: none;
     }
-.footer-end-row {
+    .footer-end-row {
         display: flex;
         flex-direction: column;
     }
@@ -2327,86 +2508,29 @@ color: #fff;
     .icons {
         display: none;
     }
-    .main .container-row {
-        max-width: 1620px;
-        width: 100%;
-        padding: 40px 24px;
-        box-sizing: border-box;
-    }   
-    .container-row .services-item {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;        
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        padding: 0;
-    }
-    /* .servises-item-title {
+    .servises-item-title {
         font-size: 20px;
     }
     .servises-item-desc {
         padding: 0;
         padding-top: 14px;
         box-sizing: border-box;
-    } */
-    .adventages {
-        max-width: 1620px;
-        width: 100%;
-        max-height: 215px;
-        height: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        margin: 0;
-        padding: 24px;
-        overflow: auto;
-        overflow-y: hidden;
-        box-sizing: border-box;
-    }
-    .adventages-item {
-        max-width: 1620px;
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        justify-content: flex-start;
-        align-items: flex-start;
-        gap: 24px;
-        margin: 0;
-        padding: 0;
     }
     .adventages-item-container,
     .adventages-row-container  {
         padding: 16px 16px 32px;
-        min-width: 250px    ;
+        min-width: 260px;
         width: 100%;
         margin: 0;
+        box-sizing: border-box;
         transform: translate(0);
-        white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
         font-size: 14px;
     }
-    .adventages-item-icon {
-        min-width: 100%;
-        max-height: 100%;
-        padding: 0;
-        margin: 0;
-        overflow: hidden;
+    .adventages-item-title {
+        white-space: wrap;
     }
-    /* .adventages-item-container .adventages-item-desc {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        font-size: 14px;
-    }
-      .adventages-row-container .adventages-item-desc {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        font-size: 14px;
-    } */
     .box {
         padding: 40px 24px;
         box-sizing: border-box;
@@ -2424,6 +2548,9 @@ color: #fff;
         justify-content: center;
         align-items: center;
         margin: 0 auto;
+    }
+    .box-item {
+        display: none;
     }
     .wrapper {
         display: flex;
