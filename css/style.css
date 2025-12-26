@@ -2489,6 +2489,9 @@ hr {
         padding-top: 14px;
         box-sizing: border-box;
     }
+    .container-row {
+        padding: 40px 24px;
+    }
     .adventages {
         overflow-x: auto;
         display: flex;
@@ -2526,7 +2529,7 @@ hr {
     .box-title {
         font-size: 20px;
         white-space: wrap;
-        margin: 50px 0;
+        margin-bottom: 50px;
     }
     .links {
         display: flex;
@@ -2542,7 +2545,7 @@ hr {
     .wrapper {
         width: 100%;
         height: 100%;
-        padding: 60px 0 60px 24px;
+        padding: 40px 24px;
         box-sizing: border-box;
         margin: 0;
         overflow: auto;
@@ -2577,7 +2580,7 @@ hr {
     }
     .wrapper-box {
         overflow: auto;
-        padding: 31px 30px 40px 25px;
+        padding: 40px 30px 40px 25px;
         box-sizing: border-box;
         margin: 0;
     }
@@ -2608,6 +2611,7 @@ hr {
         padding: 40px 24px;
         box-sizing: border-box;
         margin: 0;
+        overflow: auto;
    }
    .section-title {
         font-size: 20px;
@@ -2618,6 +2622,7 @@ hr {
    .section-row {
         display: flex;
         gap: 16px;
+        overflow: auto;
    }
     .section-item,
     .image-container,
@@ -2633,6 +2638,9 @@ hr {
         width: 100%;
         min-height: 150px;
         height: 100%;
+    }
+    .section-link {
+        margin: 0 auto;
     }
     .footer {
         padding: 40px 28px;
