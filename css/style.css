@@ -1121,7 +1121,7 @@ hr {
     flex-direction: column;
     margin: 0;
     justify-content: center;
-    align-items: flex-starts;
+    align-items: center;
     margin: 0;
     padding: 80px 0;
     box-sizing: border-box;
@@ -2601,6 +2601,7 @@ hr {
         font-size: 14px;
     }
     .section {
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: flex-start;
